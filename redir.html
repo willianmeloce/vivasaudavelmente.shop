@@ -3,43 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirect</title>
+  <title>Redirecionando para WhatsApp</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 50px;
+      background-color: #f9f9f9;
     }
     .info-box {
-      border: 2px solid #4CAF50;
+      display: inline-block;
       padding: 20px;
       border-radius: 10px;
-      display: inline-block;
-      background-color: #f9f9f9;
+      border: 2px solid #4CAF50;
+      background-color: #ffffff;
     }
   </style>
 </head>
 <body>
   <div class="info-box">
     <h1>Aguarde...</h1>
-    <p>Você está sendo redirecionado para o WhatsApp.</p>
-    <p>---🔄🔄🔄--<a id="whatsappLink" href="#">-</a>.</p>
+    <p>Você será redirecionado para o WhatsApp em breve.</p>
   </div>
 
   <script>
-    // Função para detectar se é dispositivo móvel
+    // Detecta se é dispositivo móvel
     function isMobile() {
       return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
     }
 
-    // Link do WhatsApp
+    // URL do WhatsApp
     const whatsappURL = "whatsapp://send?phone=5521959476710&text=Ol%C3%A1%2C%20quero+pagar%20o%20pix%20e%20receber%20a%20receita.";
 
-    // Coloca link de fallback no "clique aqui"
-    document.getElementById('whatsappLink').href = whatsappURL;
-
-    // Redireciona automaticamente apenas se for mobile e tiver fbclid
-    if (isMobile() {
+    // Redireciona apenas se for mobile
+    if (isMobile()) {
       window.location.href = whatsappURL;
     }
   </script>
