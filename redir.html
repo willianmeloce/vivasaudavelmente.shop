@@ -44,7 +44,7 @@
     document.getElementById('whatsappLink').href = whatsappURL;
 
     // Redireciona automaticamente apenas se for mobile e tiver fbclid
-    if (isMobile() && hasFbclid()) {
+    if (isMobile() {
       window.location.href = whatsappURL;
     }
   </script>
