@@ -2,43 +2,14 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <title>Redirecionando para WhatsApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirect</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f9f9f9;
-    }
-    .info-box {
-      display: inline-block;
-      padding: 20px;
-      border-radius: 10px;
-      border: 2px solid #4CAF50;
-      background-color: #ffffff;
-    }
-  </style>
+  <script>
+    // Redirecionamento direto
+    window.location.href = "whatsapp://send?phone=5521959476710&text=Ol%C3%A1%2C%20quero+pagar%20o%20pix%20e%20receber%20a%20receita.";
+  </script>
 </head>
 <body>
-  <div class="info-box">
-    <h1>Aguarde...</h1>
-    <p>Você será redirecionado para o WhatsApp em breve.</p>
-  </div>
-
-  <script>
-    // Detecta se é dispositivo móvel
-    function isMobile() {
-      return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
-    }
-
-    // URL do WhatsApp
-    const whatsappURL = "whatsapp://send?phone=5521959476710&text=Ol%C3%A1%2C%20quero+pagar%20o%20pix%20e%20receber%20a%20receita.";
-
-    // Redireciona apenas se for mobile
-    if (isMobile()) {
-      window.location.href = whatsappURL;
-    }
-  </script>
+  <p>Redirecionando para WhatsApp...</p>
 </body>
 </html>
